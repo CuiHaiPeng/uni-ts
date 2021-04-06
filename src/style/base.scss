@@ -1,0 +1,131 @@
+#app {
+  height: 100%;
+  min-width: 1300px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+// 横向布局
+.row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+// 竖向布局
+.col {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+// 横向居中
+.centerR {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+// 竖向居中
+.centerC {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+// 横轴正常 竖轴居中
+.rowC {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+//数轴正常 横向居中
+.colC {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+//主轴居中
+.jc {
+  justify-content: center;
+}
+//居中
+.ac {
+  align-items: center;
+}
+//分开
+.sp {
+  justify-content: space-between;
+}
+//换行
+.warp {
+  flex-wrap: wrap;
+}
+/* 超出一行... */
+.text1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: break-all;
+}
+/* 超出二行...  应该用sass的一个方法 但是我不会 */
+.text2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  word-break: break-all;
+}
+.text3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  word-break: break-all;
+}
+//小手
+.pointer {
+  cursor: pointer;
+}
+//高度百分比
+.mh {
+  height: 100%;
+}
+
+.mw {
+  width: 100%;
+}
+
+.centerP {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.hbk {
+  transition: 0.2s all;
+
+  &:hover {
+    box-shadow: 0 0 20px rgb(218, 218, 218) !important;
+  }
+}
+
+.c666 {
+  color: #666;
+}
+
+.c999 {
+  color: #999;
+}
+
+.c333 {
+  color: #333;
+}
