@@ -1,4 +1,4 @@
-# uni-app + typescript + vuex 模板
+# uni-app + typescript 模板
 
 ## Project setup
 
