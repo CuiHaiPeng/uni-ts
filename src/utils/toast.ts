@@ -38,6 +38,7 @@ const toast: Toast = function (param, config = {}) {
     })
   })
 }
+
 //成功框
 toast.success = (tips, config = {}) => {
   return toast({
@@ -46,6 +47,7 @@ toast.success = (tips, config = {}) => {
     ...config,
   })
 }
+
 //加载框
 toast.loading = (tips, config = {}) => {
   return toast({

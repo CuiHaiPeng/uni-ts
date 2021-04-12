@@ -13,8 +13,5 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-div {
-  background: dodgerblue;
-}
 /*每个页面公共css */
 </style>
