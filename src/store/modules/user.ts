@@ -12,7 +12,7 @@ const token = getToken()
 const state: User = {
   login: !!token,
   userInfo: getUserInfo(),
-  token: getToken(),
+  token,
 }
 
 const mutations: Mutations = {

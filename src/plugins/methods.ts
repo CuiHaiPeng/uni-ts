@@ -58,6 +58,7 @@ const toPage: Methods.ToPage = (path, type = 'to') => {
   uni[pageType[type]](pagePathConfig)
 }
 
+
 export default {
   install(app: VueConstructor) {
     /** 路由跳转 */

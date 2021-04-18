@@ -9,7 +9,6 @@ export interface StoreData {
   app: App
   user: User
 }
-
 const store: Store<StoreData> = new Vuex.Store({
   modules: {
     app,

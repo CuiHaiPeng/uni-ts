@@ -12,7 +12,7 @@ export type Toast = {
 
 //提示
 const toast: Toast = function (param, config = {}) {
-  let toastOptions: UniApp.ShowToastOptions = {
+  const toastOptions: UniApp.ShowToastOptions = {
     title: '',
     duration: 2000,
     icon: 'none',

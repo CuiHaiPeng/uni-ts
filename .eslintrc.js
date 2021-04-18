@@ -6,19 +6,25 @@ module.exports = {
     'plugin:vue/vue3-essential',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
     'plugin:vue/essential',
     'plugin:vue/recommended',
+    'plugin:@typescript-eslint/eslint-plugin',
+    'prettier/@typescript-eslint',
   ],
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: 'module',
+    parser: 'babel-eslint',
     ecmaFeatures: {
       jsx: true,
       globalReturn: true,
       impliedStrict: false,
       experimentalObjectRestSpread: true, //启用对对象的扩展
     },
+  },
+  globals: {
+    uni: true,
+    wx: true,
   },
   env: {
     browser: true,
@@ -27,7 +33,7 @@ module.exports = {
     commonjs: true,
     jquery: true,
   },
-  // required to lint files
+  // required to lint files '@typescript-eslint'  'prettier/@typescript-eslint',
   plugins: ['prettier', '@typescript-eslint'],
   parser: 'vue-eslint-parser',
   // add your custom rules here
